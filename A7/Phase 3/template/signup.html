@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Signup</title>
+    <link rel="shortcut icon" href="icon.jpg"/>
+    <link rel="stylesheet" type="text/css" href="/signup.css">
+  </head>
+
+<html>
+  <body style="text-align: center;">
+    <section>
+    <div class="container">
+      <div class = "head"><img src="/who" style="width:100%; object-fit: cover;"></div> 
+    <div class="form">
+      <form action="/signup" method="get">
+        <p>Signup</p>
+        <input name="username" type="text" placeholder="Username" style="display:block; margin: auto; margin-bottom: 10px; padding: 5px; width: 94%;" />
+        <p style="font-size:small;">who are you?</p>
+      <input class="radiobutton" type="radio" name="type_" value="passenger" checked> Passenger
+      <input class="radiobutton" type="radio" name="type_" value="driver" style="margin-left: 10px;"> Driver
+      <input name="directed" type="hidden" value="yes"/>
+        
+      <p style="font-size: small;"><br></p>
+
+        <button class="button-19" role="button" type="submit" name="but" value="signup" style="display:block; width: 100%; padding: 7px;">Signup</button>
+      </form>
+    </div>
+    <div class = "title"><a href="/">UTaxi!</a></div>
+    <div class = "title">
+        <%
+                cout << context["msg"];
+            %>
+          </div>
+    </div>
+</section>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Post Trip & Get Cost</title>
+    <link rel="shortcut icon" href="icon.jpg"/>
+    <link rel="stylesheet" type="text/css" href="/post_trip.css">
+  </head>
+
+<html>
+  <body style="text-align: center;">
+    <div class="container">
+      <div class = "head"><img src="/night" style="width:100%; object-fit: cover;"></div> 
+    <div class="form" >
+      <form action="/post_trip" method="get">
+        <p>Post trip & Get Cost</p>
+        <input name="username" type="text" placeholder="Username" style="display:block; margin: auto; margin-bottom: 10px; padding: 5px; width: 94%;" />
+        <input name="origin" type="text" placeholder="Origin" style="display:block; margin: auto; margin-bottom: 10px; padding: 5px; width: 94%;" />
+        <input name="destination" type="text" placeholder="Destination" style="display:block; margin: auto; margin-bottom: 10px; padding: 5px; width: 94%;" />
+        <input name="directed" type="hidden" value="yes"/>
+        
+        <p style="font-size:small;">hurry?</p>
+      <input class="radiobutton" type="radio" name="hurry_" value="yes" checked> Yes
+      <input class="radiobutton" type="radio" name="hurry_" value="no" style="margin-left: 10px;"> No
+      <p style="font-size: small;"><br></p>
+
+        <button class="button-19" role="button" type="submit" name="but" value="post" style="display:block; width: 100%; padding: 7px;">Post trip</button>
+        <button class="button-19" role="button" type="submit" name="but" value="cost"  style="display:block; width: 100%; padding: 7px;">Get cost</button>
+      </form>
+    </div>
+    <div class = "title"><a href="/">UTaxi!</a></div>
+    <div class = "title">
+        <%
+                cout << context["id"];
+            %>
+    </div>
+  </div>
+  </body>
+</html>

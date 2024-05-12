@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Delete Trip</title>
+    <link rel="shortcut icon" href="icon.jpg"/>
+    <link rel="stylesheet" type="text/css" href="/delete_trip.css">
+  </head>
+
+<html>
+  <body style="text-align: center;">
+    <div class="container">
+      <div class = "head"><img src="/delete" style="width:100%; object-fit: cover;"></div> 
+    <div class="form">
+      <form action="/delete_trip" method="get">
+        <p>Delete trip</p>
+        <input name="username" type="text" placeholder="Username" style="display:block; margin: auto; margin-bottom: 10px; padding: 5px; width: 94%;" />
+        <input name="id" type="text" placeholder="Trip ID" style="display:block; margin: auto; margin-bottom: 10px; padding: 5px; width: 94%;" />
+        <input name="directed" type="hidden" value="yes"/>
+        
+      <p style="font-size: small;"><br></p>
+
+        <button class="button-19" role="button" type="submit" name="but" value="delete" style="display:block; width: 100%; padding: 7px;">Delete</button>
+      </form>
+    </div>
+    <div class = "title"><a href="/">UTaxi!</a></div>
+    <div class = "title">
+        <%
+                cout << context["msg"];
+            %>
+          </div>
+    </div>
+  </body>
+</html>

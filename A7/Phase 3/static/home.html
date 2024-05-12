@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UTaxi!</title>
+    <link rel="stylesheet" type="text/css" href="/home.css">
+  </head>
+  <body style="text-align: center;">
+    <section>
+    <div class ="container">
+      <div class = "head"><img src="/odd.jpg" style="width:100%; object-fit: cover;"></div>
+      <div class = "title">UTaxi!</div>
+      <div class = "signup">
+        <form method="get" action="/signup">
+          <input name="directed" type="hidden" value="no"/>
+          <button class="button-19" role="button" type="submit">Signup</button>
+      </form>
+      </div>
+      <div class = "passenger text">/PASSENGER/</div>
+      <div class = "passenger_work">
+        <form method="get" action="/post_trip">
+          <input name="directed" type="hidden" value="no"/>
+          <button class="button-19" role="button" type="submit">Post Trip & Get Cost</button>
+      </form>
+      
+      <form method="get" action="/delete_trip">
+        <input name="directed" type="hidden" value="no"/>
+        <button class="button-19" role="button" type="submit">Delete trip</button>
+    </form>
+      </div>
+      <div class = "drvier text">/DRIVER/</div>
+      <div class = "drier_work">
+        <form method="get" action="/triplistsign">
+        <button class="button-19" role="button" type="submit">Trip list</button>
+    </form></div>
+    </div>
+  </section>
+  </body>
+</html>
